@@ -24,18 +24,27 @@ else if ($soma1 == $soma2)
     <title>Dados</title>
 </head>
 <body>
- <?php include "menus.php";?>   
+ <?php include "indexmenus.php";?>   
 <fieldset>
 <form action= "" method="post">
     <input type= "submit" value="Rolar Dado">
 </form>
 <br>
-<p>Seu dado!</p>
+<h1><?php echo $vencedor?></h1>
+<fieldset>
+<h2>Seu Dado!</h2>
 <br>
  <?php echo "<img src = 'dados/$dadouser1.png' alt=''>";?>
  <?php echo "<img src = 'dados/$dadouser2.png' alt=''>";?>
-
- <?php echo $soma1 ?>
+<br>
+ <h2><?php echo $soma1 ?></h2>
+</fieldset>
+<fieldset>
+<h2>Dado do Computador!</h2>
+<?php echo "<img src = 'dados/$dadopc1.png' alt=''>";?>
+ <?php echo "<img src = 'dados/$dadopc2.png' alt=''>";?>
+<br>
+ <h2><?php echo $soma2 ?></h2>
 </fieldset>
 
 
